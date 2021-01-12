@@ -1,0 +1,19 @@
+.StyleGuide {
+
+  &-Button {
+    margin: 15px;
+  }
+
+  &-Input {
+    width: 25%;
+    margin: 15px;
+  }
+
+  &-CardContainer {
+    display: flex;
+  }
+
+  &-CardContainer > div {
+    margin: 15px;
+  }
+}
