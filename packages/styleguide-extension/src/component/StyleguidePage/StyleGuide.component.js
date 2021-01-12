@@ -4,7 +4,6 @@ import Input from 'antd/lib/input';
 import { PureComponent } from 'react';
 
 import 'antd/dist/antd.css';
-import './StyleGuide.style.scss';
 
 /** @namespace StyleguideExtension/Component/StyleguidePage/StyleGuide/Component/StyleGuideComponent */
 export class StyleGuideComponent extends PureComponent {

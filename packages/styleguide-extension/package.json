@@ -3,7 +3,12 @@
     "version": "0.0.0",
     "license": "OSL-3.0",
     "scandipwa": {
-        "type": "extension"
+        "type": "extension",
+        "build": {
+            "cracoPlugins": [
+                "build-config/customizeAntTheme.js"
+            ]
+        }
     },
     "eslintConfig": {
         "extends": "@scandipwa"

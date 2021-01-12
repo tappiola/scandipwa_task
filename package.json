@@ -42,5 +42,9 @@
     "license": "OSL-3.0",
     "publishConfig": {
         "access": "public"
+    },
+    "devDependencies": {
+        "less": "^4.1.0",
+        "less-loader": "^7.2.1"
     }
 }

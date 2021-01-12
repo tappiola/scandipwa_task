@@ -13,14 +13,20 @@ import { createElement } from 'react';
 
 import StyleGuidePage from '../component/StyleguidePage';
 
-const addStyleGuidePageRoute = (member) => [
-    ...member,
-    {
-        position: 10,
-        path: '/styleguide',
-        render: (props) => createElement(StyleGuidePage, props)
+const addStyleGuidePageRoute = (member) => {
+    if (process.env.NODE_ENV !== 'development') {
+        return member;
     }
-];
+
+    return [
+        ...member,
+        {
+            position: 10,
+            path: '/styleguide',
+            render: (props) => createElement(StyleGuidePage, props)
+        }
+    ];
+};
 
 export default {
     'Router/Component/Router/Component/RouterComponent': {
