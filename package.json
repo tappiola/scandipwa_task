@@ -4,13 +4,16 @@
     "version": "0.0.0",
     "scripts": {
         "start": "scandipwa-scripts start",
-        "build": "scandipwa-scripts build"
+        "build": "scandipwa-scripts build",
+        "postinstall": "scandipwa-scripts link",
+        "postupdate": "scandipwa-scripts link"
     },
     "dependencies": {
-        "@scandipwa/scandipwa-scripts": "2.2.1",
         "@scandipwa/framework": "0.0.3",
         "@scandipwa/router": "0.0.3",
-        "antd": "4.10.2"
+        "@scandipwa/scandipwa-scripts": "2.2.1",
+        "antd": "^4.10.2",
+        "styleguide-extension": "file:packages/styleguide-extension"
     },
     "scandipwa": {
         "themeAlias": "Blank",
@@ -18,7 +21,7 @@
         "extensions": {
             "@scandipwa/framework": true,
             "@scandipwa/router": true,
-            "antd": true
+            "styleguide-extension": true
         }
     },
     "browserslist": {

@@ -1,7 +1,9 @@
+import Button from 'antd/lib/button';
 import { PureComponent } from 'react';
 
 import logo from './logo.svg';
 
+import 'antd/dist/antd.css';
 import './WelcomePage.style.scss';
 
 /** @namespace Scandipwa_task/Component/WelcomePage/Component/WelcomePageComponent */
@@ -44,6 +46,8 @@ export class WelcomePageComponent extends PureComponent {
         return (
             <main className="WelcomePage">
                 { this.renderLogo() }
+                <Button type="primary">Button</Button>
+                <Button type="secondary">Button</Button>
                 { this.renderWelcomeMessage() }
             </main>
         );
